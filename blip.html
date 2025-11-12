@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <script src="https://unpkg.com/blip-chat-widget"></script>
-  </head>
-  <body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blip Chat</title>
+</head>
+<body>
+    <!-- Script do chat -->
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
     <script>
-      window.onload = function () {
-        new BlipChat()
-          .withAppKey('cHJkYXRlbmRpbWVudG9odW1hbm82OmViY2Q4ODgwLWMzNTAtNGFjOC05YjYwLWYwZTVmOWFjYmVkMQ==')
-          .withButton({ color: '#0096fa', icon: '' })
-          .withCustomCommonUrl('https://autodoc.chat.blip.ai/')
-          .build();
-      };
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('cHJkYXV0b2RvYzo2N2UxYWViOC00MzEwLTQ4OTgtYTFjYS04MWFhMjM0N2M3MjU=')
+                    .withButton({
+                        color: "#E62E4D",
+                        icon: ""
+                    })
+                    .withCustomCommonUrl('https://autodoc.chat.blip.ai/')
+                    .build();
+            }
+        })();
     </script>
-  </body>
+</body>
 </html>
-
-
-
-
