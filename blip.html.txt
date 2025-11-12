@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/blip-chat-widget"></script>
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        new BlipChat()
+          .withAppKey('cHJkYXRlbmRpbWVudG9odW1hbm82OmViY2Q4ODgwLWMzNTAtNGFjOC05YjYwLWYwZTVmOWFjYmVkMQ==')
+          .withButton({ color: '#0096fa', icon: '' })
+          .withCustomCommonUrl('https://autodoc.chat.blip.ai/')
+          .build();
+      };
+    </script>
+  </body>
+</html>
